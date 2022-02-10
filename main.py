@@ -61,9 +61,9 @@ def fix_start(s):
 # Assume a and b are length 2 or more.
 def mix_up(a, b):
 
-    if len(a and b) > 2:
-        a.replace(a[1], b[1], 1)
-        return a + ' ' + b
+    if len(a and b) >= 2:
+
+        return b[0] + b[1] + a[2:] + ' ' + a[0] + a[1] + b[2:]
 
 
 # Provided simple test() function used in main() to print
